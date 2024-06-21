@@ -46,7 +46,108 @@ nav.navbar ul li a:hover{
     text-decoration: none;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 div.main-content {
     background-color: aliceblue;
     margin-top: 10px;
+    /* Apply clearfix to the main content container */
+    overflow: hidden; /* Another method to clear floats */
+}
+
+div.main-product {
+    width: 100%; /* Adjust based on content size */
+    float: left; /* Float left for textual content */
+    margin-bottom: 10px;
+}
+
+div.product-image {
+    width: 40%; /* Adjust based on image size */
+    float: left; /* Float right for the image */
+}
+
+div.product-image img {
+    width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+div.buy-button{
+    padding: auto;
+    outline-color: black;
+    outline-style: solid;
+    float: left;
+    width: 60%;
+    text-align: center;
+}
+p.price{
+    color: red;
+    float: center;
+}
+
+div.product-information{
+    margin-top: 20px
+}
+
+table.product-details{
+    text-align: left;
+}
+
+td.under-line{
+    text-decoration: underline;
+    color: blue;
+}
+
+div.similar-products {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* This will distribute space evenly */
+}
+
+.product-card {
+    flex: auto; /* Grow and shrink with basis of 25% */
+    
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff; /* White background for each card */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center; /* Centering the text and buttons */
+}
+
+.product-card img {
+    width: auto; /* Make the image fit the width of the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product-card p a{
+    margin: 10px 0; /* Vertical spacing */
+}
+
+.product-actions button {
+    margin-top: 5px;
+    padding: 5px 10px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    background-color: #007BFF; /* Example blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.product-actions button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer{
+    margin-top: 20px;
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
 }

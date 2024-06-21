@@ -26,34 +26,83 @@
 
 
     <div class="main-content">
-        <h2>Title 1</h2>
-        <hr>
-        <div class="product-image">
-            <img src="path_to_artwork.jpg" alt="Self-portrait in a Straw Hat">
+        <div class="main-product">
+            <h2>Self-portrait in a Straw Hat</h2>
+            <p>By<a href="#"> Louise-Elisabeth Lebrun</a></p>
+            <hr>
+            <div class="product-image">
+                <img src="images/113010-m.jpg" alt="Self-portrait in a Straw Hat">
+            </div>
+            <div class="product-details">
+                <p>The painting appears, </p>
+                <p class="price"><strong>$700</strong></p>
+                <!-- Product actions -->
+                 <div class="buy-button">
+                    <a href="#"><button>Add to Wish List</button></a>
+                    <a href="#"><button>Add to Shopping Cart</button></a>
+                 </div>
+                
+                <!-- Product information table -->
+                <div class="product-information">
+                    <h3>Product Details</h3>
+                    <hr>
+                    <table class="product-details">
+                        <tr><th>Date:</th><td>1782</td></tr>
+                        <tr><th>Medium:</th><td>Oil</td></tr>
+                        <tr><th>Dimensions:</th><td>50cm x 67cm</td></tr>
+                        <tr><th>Home:</th><td class="under-line">Gen</td></tr>
+                        <tr><th>Genres:</th><td class="under-line">Rococo</td></tr>
+                        <tr><th>Subject:</th><td class="under-line">Peopke</td></tr>
+                        <!-- More details here -->
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="product-details">
-            <h1>Self-portrait in a Straw Hat</h1>
-            <p>By Louise-Elisabeth Lebrun</p>
-            <p>The painting appears, </p>
-            <p><strong>$700</strong></p>
-            <!-- Product actions -->
-            <button>Add to Wish List</button>
-            <button>Add to Shopping Cart</button>
-            <!-- Product information table -->
-            <table>
-                <tr><th>Date:</th><td>1782</td></tr>
-                <tr><th>Dimensions:</th><td>50cm x 67cm</td></tr>
-                <!-- More details here -->
-            </table>
-        </div>
+        <div class="similar-products">
+            <h2>Similar Products</h2>
+            <hr>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/tiny/099110.jpg" alt="Artist Holding a Thistle">
+                    <p><a href="#"> Artist Holding a Thistle</a></p>
+                    <div class="product-actions">
+                        <button>View</button>
+                        <button>Wish</button>
+                        <button>Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/tiny/106020.jpg" alt="Portrait of Eleanor of Toledo">
+                    <p><a href="#"> Portrait of Eleanor of Toledo</a></p>
+                    <div class="product-actions">
+                        <button>View</button>
+                        <button>Wish</button>
+                        <button>Cart</button>
+                    </div>
+                </div>
+                <!-- Repeat for two more products -->
+                <div class="product-card">
+                    <img src="images/tiny/113010.jpg" alt="Product Name">
+                    <p><a href="#">Product Name</a></p>
+                    <div class="product-actions">
+                        <button>View</button>
+                        <button>Wish</button>
+                        <button>Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/tiny/116010.jpg" alt="Another Product">
+                    <p><a href="#">Another Product</a></p>
+                    <div class="product-actions">
+                        <button>View</button>
+                        <button>Wish</button>
+                        <button>Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
-    <div class="similar-products">
-        <h2>Similar Products</h2>
-        <!-- Product Thumbnails -->
-        <img src="path_to_similar_product1.jpg" alt="Product">
-        <img src="path_to_similar_product2.jpg" alt="Product">
-        <!-- More products -->
-    </div>
+    
     <footer>
         <p>© 2024 Art Store. All rights reserved.</p>
         <p>Follow us on <a href="#">Social Media</a></p>
