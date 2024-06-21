@@ -1,0 +1,52 @@
+body{
+    background-image: url('images/stucco/stucco.png');
+    font-family: Verdana, serif;
+}
+div.header {
+    background-color: black;
+    padding: 5px;
+    text-align: right;
+}
+div.header a{
+    color:azure;
+    text-decoration: none;
+}
+div.header a:hover{
+    color:rgb(175, 62, 105);
+    text-decoration: none;
+}
+
+h1.bigTitle{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(159, 31, 72);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+nav.navbar ul {
+    background-color: rgb(117, 121, 123);
+    padding: 5px;
+    text-align: left;
+    list-style-type: none;
+    overflow: hidden;
+}
+nav.navbar ul li {
+    display: inline-block; /* Align items horizontally */
+}
+nav.navbar ul li a{
+    color: rgb(209, 241, 229);
+    text-decoration: none;
+}
+
+nav.navbar ul li a:hover{
+
+    color: rgb(217, 165, 11);
+    background-color: rgb(87, 166, 166);
+    text-decoration: none;
+}
+
+div.main-content {
+    background-color: aliceblue;
+    margin-top: 10px;
+}
