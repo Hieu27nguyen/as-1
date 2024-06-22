@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Art Store</title>
+    <title>Customer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <a href="#">Checkout</a>
     </div>
 
-    <h1 class="bigTitle">Header</h1>
+    <h1 class="bigTitle">Art Store</h1>
 
     <nav class="navbar">
         <ul>
@@ -23,6 +23,83 @@
         <li><a href="#">Artists</a></li>
         </ul>
     </nav>
+
+    <div class="register-form">
+        <form action="https://faculty.washington.edu/ealmasri/assign1.php"> 
+            <div class="register-form"></div>
+                <h1> Customer Registration</h1>
+                    <div class="user-infor">                
+                        <h3>1. User Info</h3>
+                        <hr>
+                        <label for="first-name">First Name:</label><br>
+                        <input type="text" id="first-name" name="first"><br>
+                        <label for="last-name">Last Name:</label><br>
+                        <input type="text" id="last-name" name="last"><br>
+                        <label for="gmail">Gmail:</label><br>
+                        <input type="email" id="gmail" name="email"><br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="pass1"><br>
+                        <label for="password">Retype Password:</label><br>
+                        <input type="password" id="password" name="pass2"><br>
+
+            </div>
+        
+                <div class="location">
+                    <h3>2. Location</h3>
+                    <hr>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="city">City:</label><br>
+                    <input type="text" name="city" id="city"><br>
+                    <label for="state">State:</label><br>
+                    <input type="text" name="state" id="state"><br>
+                    <label for="zip">Zipcode:</label><br>  
+                    <input type="text" pattern="[0-9]{5}" name="zip" id="zip"><br>
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" name="phone" id="phone"><br>
+                    <label for="country">Country:</label><br>
+                    <select name="country"> <br>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="VietNam">Viet Nam</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                    </select> <br>
+                    
+                    <label for="continent ">Continent</label> <br>
+                    <select name="continent"> <br>
+                        <option value="Asia">Asia</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Eu">Eu</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                    </select>   
+                </div>
+
+                <div class="personal-detail">
+                    <h3>3. Personal Details</h3>
+                    <hr>
+        
+                    <label for="birthday">Birth Day:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                    <label for="favorite">Favorite Color:</label> 
+                    <input type="color" id="favorite" name="favorite"><br>
+                    <label for="interest">Interest In Art:</label> <br>
+                    <input type="range" id="interest" name="interest" min="1" max="10">
+                    
+        
+                </div>
+        
+                <div class="done">
+                    <h3>4. All Done</h3>
+                    <hr>
+                    <input type="checkbox" id="accept" name="accept" required>
+                    <label for="accept">I agree to <a href="#">the Terms of the Site</a></label>
+                </div> 
+                <img src="images/button_ok.png" alt="Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                <button type="submit"><i href="images/button_ok.png"></i>Sign me up!</button>     
+        </form>          
+    </div>
 
 
 
